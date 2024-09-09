@@ -204,12 +204,13 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding-top: 100px;
 }
 
 [class*=__container] {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
   width: 100%;
 }
 
@@ -1056,10 +1057,6 @@ h3 {
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-.hero {
-  margin-top: 100px;
 }
 
 .hero .swiper-slide .hero__offer {
@@ -2202,6 +2199,10 @@ h3 {
 }
 
 @media screen and (min-width: 1200px) {
+  main {
+    padding-top: 0;
+  }
+
   h1 {
     font-size: 60px;
   }
@@ -2321,10 +2322,6 @@ h3 {
     height: 0;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
-  }
-
-  .hero {
-    margin-top: 0;
   }
 
   .hero .swiper-pagination {
