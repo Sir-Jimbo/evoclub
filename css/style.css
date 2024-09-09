@@ -2185,6 +2185,10 @@ h3 {
   [class*=__container] {
     padding: 0 20px;
   }
+
+  .breadcrumbs__container {
+    padding-top: 30px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
