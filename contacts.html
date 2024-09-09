@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240825174320"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240909132052"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240825174320" />
-  <title>Про нас</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20240909132052" />
+  <title>Контакты</title>
 </head>
 
   <body>
@@ -198,6 +198,7 @@
         </li>
         <li>
           <a href="#">Караоке-системы</a>
+          <div class="header__menu--overlay"></div>
           <div class="header__submenu">
             <div class="header__submenu--item">
               <div class="header__submenu--title">Категории</div>
@@ -249,6 +250,7 @@
         </li>
         <li>
           <a href="#">Караоке Evolution</a>
+          <div class="header__menu--overlay"></div>
           <div class="header__submenu">
             <div class="header__submenu--item">
               <div class="header__submenu--title">Категории</div>
@@ -300,6 +302,7 @@
         </li>
         <li>
           <a href="#">Караоке X-STAR</a>
+          <div class="header__menu--overlay"></div>
           <div class="header__submenu">
             <div class="header__submenu--item">
               <div class="header__submenu--title">Категории</div>
@@ -351,6 +354,7 @@
         </li>
         <li>
           <a href="#">Комплекты</a>
+          <div class="header__menu--overlay"></div>
           <div class="header__submenu">
             <div class="header__submenu--item">
               <div class="header__submenu--title">Категории</div>
@@ -402,6 +406,7 @@
         </li>
         <li>
           <a href="#">Собрать комплект</a>
+          <div class="header__menu--overlay"></div>
           <div class="header__submenu">
             <div class="header__submenu--item">
               <div class="header__submenu--title">Категории</div>
@@ -453,6 +458,7 @@
         </li>
         <li>
           <a href="#">Микрофоны</a>
+          <div class="header__menu--overlay"></div>
           <div class="header__submenu">
             <div class="header__submenu--item">
               <div class="header__submenu--title">Категории</div>
@@ -504,6 +510,7 @@
         </li>
         <li>
           <a href="#">Колонки</a>
+          <div class="header__menu--overlay"></div>
           <div class="header__submenu">
             <div class="header__submenu--item">
               <div class="header__submenu--title">Категории</div>
@@ -555,6 +562,7 @@
         </li>
         <li>
           <a href="#">Аренда</a>
+          <div class="header__menu--overlay"></div>
           <div class="header__submenu">
             <div class="header__submenu--item">
               <div class="header__submenu--title">Категории</div>
@@ -606,6 +614,7 @@
         </li>
         <li>
           <a href="#">Trade-In</a>
+          <div class="header__menu--overlay"></div>
           <div class="header__submenu">
             <div class="header__submenu--item">
               <div class="header__submenu--title">Категории</div>
@@ -955,7 +964,8 @@
   </div>
 </header>
 
-    <main><section class="breadcrumbs">
+    <main>
+      <section class="breadcrumbs">
   <div class="breadcrumbs__container">
     <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item">
@@ -968,7 +978,85 @@
     </ul>
   </div>
 </section>
-</main>
+
+      <section class="contacts">
+  <div class="contacts__container">
+    <h1>Контакты</h1>
+    <div class="contacts__block">
+      <div class="contacts__left">
+        <h3>Всегда вам рады</h3>
+        <div class="contacts__list">
+          <a href="tel:+380800331911">
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            +38 (080) 033 19 11
+          </a>
+          <a href="tel:+380900321113">
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            +38 (090) 032 11 13
+          </a>
+          <a href="tel:+380900321113">
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            +38 (090) 032 11 13
+          </a>
+          <a href="mailto:sale@evoclub.com.ua">
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+            <span>sale@evoclub.com.ua</span>
+          </a>
+        </div>
+        <a href="#" class="contacts__callback">Заказать звонок</a>
+      </div>
+      <div
+        class="contacts__right"
+        style="background-image: url('./img/map.png')"
+      >
+        <div class="contacts__dropdown">
+          <span>Днепр</span>
+          <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" /></picture>
+        </div>
+        <picture><source srcset="./img/pin.webp" type="image/webp"><img class="contacts__pin" src="./img/pin.png" alt="" /></picture>
+      </div>
+    </div>
+    <div class="contacts__offer">
+      <picture><source srcset="./img/contacts-offer.webp" type="image/webp"><img src="./img/contacts-offer.png" class="contacts__offer--overlay" /></picture>
+      <div class="contacts__offer--left">
+        <div class="contacts__offer--title">Хотите посетить наш Шоу-рум</div>
+        <div class="contacts__offer--description">
+          Оставьте свой номер и мы свяжемся с вами
+        </div>
+      </div>
+      <div class="contacts__offer--right">
+        <form action="" class="contacts__offer--form">
+          <input type="text" placeholder="Имя" />
+          <input type="text" placeholder="Номер" />
+          <div class="contacts__offer--error"></div>
+          <button type="submit" class="contacts__offer--submit">
+            Оставить заявку
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section
+  class="offer-bottom"
+  style="background-image: url('./img/offer-bottom.png')"
+>
+  <div class="offer-bottom__watermark">evoclub</div>
+  <h2>Слишком много информации?</h2>
+  <p>Наберите и расскажите мне все сначала!</p>
+  <a href="#">Оставить заявку</a>
+</section>
+
+    </main>
     <footer class="footer" style="background-image: url('./img/footer.png')">
   <div class="footer__left">
     <div class="footer__logo">
@@ -1148,6 +1236,25 @@
     </div>
   </div>
 </footer>
+ <a
+  class="bc-popup-btn"
+  href="#form_back_call"
+  data-title="Заказать обратный звонок"
+>
+  <img
+    data-src="img/bc-ico.png"
+    alt=""
+    class="lazyloaded"
+    src="img/bc-ico.png"
+  />
+</a>
+ <div class="up">
+  <div class="up__block">
+    <span class="up__text">Вверх</span>
+  </div>
+</div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240909132052"></script>
+    <script src="js/app.min.js?_v=20240909132052"></script>
   </body>
 </html>
