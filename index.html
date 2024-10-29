@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240909155820"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241029173833"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240909155820" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20241029173833" />
   <title>Головна</title>
 </head>
 
@@ -169,8 +169,8 @@
               </ul>
             </div>
             <div class="header__submenu--item">
-              <ul class="header__submenu--images">
-                <li>
+              <div class="header__submenu--images">
+                <div class="header__submenu--images-item">
                   <a href="#">
                     <div
                       class="header__submenu--image"
@@ -180,8 +180,8 @@
                       <p>КАРАОКЕ-СИСТЕМА EVOBOX</p>
                     </div>
                   </a>
-                </li>
-                <li>
+                </div>
+                <div class="header__submenu--images-item">
                   <a href="#">
                     <div
                       class="header__submenu--image"
@@ -191,8 +191,8 @@
                       <p>КАРАОКЕ-СИСТЕМА EVOBOX</p>
                     </div>
                   </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </li>
@@ -987,11 +987,11 @@
             srcset="img/hero-mob.png"
           />
           <source
-            type="image/jpeg"
+            type="image/png"
             media="(min-width: 768px)"
             srcset="img/hero-1.png"
           />
-          <img src="img/hero-1.png.jpg" alt="hero" width="1920" height="700" />
+          <img src="img/hero-1.png" alt="hero" width="1920" height="700" />
         </picture>
         <div class="hero__block">
           <div class="hero__title">
@@ -1023,14 +1023,32 @@
       </div>
       <div class="swiper-slide">
         <picture>
-          <source srcset="img/hero-2.webp" type="image/webp" />
-          <img src="img/hero-2.png" alt="hero" />
+          <source
+            type="image/webp"
+            media="(max-width: 767px)"
+            srcset="img/hero-mob-2.webp"
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcset="img/hero-2.webp"
+          />
+          <source
+            type="image/png"
+            media="(max-width: 767px)"
+            srcset="img/hero-mob-2.png"
+          />
+          <source
+            type="image/png"
+            media="(min-width: 768px)"
+            srcset="img/hero-2.png"
+          />
+          <img src="img/hero-2.png" alt="hero" width="1920" height="700" />
         </picture>
         <div class="hero__block">
           <div class="hero__title">
-            <h1>
-              Организация клубов <span>и домашнего караоке</span> ПОД КЛЮЧ
-            </h1>
+            <h1>Лучший караоке шоу-рум</h1>
+            <p>Посетите наш шоу-рум и послушайте в живую</p>
             <span class="circle-1"></span>
             <span class="circle-2"></span>
             <span class="circle-3"></span>
@@ -1056,14 +1074,32 @@
       </div>
       <div class="swiper-slide">
         <picture>
-          <source srcset="img/hero-3.webp" type="image/webp" />
-          <img src="img/hero-3.png" alt="hero" />
+          <source
+            type="image/webp"
+            media="(max-width: 767px)"
+            srcset="img/hero-mob-3.webp"
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcset="img/hero-3.webp"
+          />
+          <source
+            type="image/png"
+            media="(max-width: 767px)"
+            srcset="img/hero-mob-3.png"
+          />
+          <source
+            type="image/png"
+            media="(min-width: 768px)"
+            srcset="img/hero-3.png"
+          />
+          <img src="img/hero-3.png" alt="hero" width="1920" height="700" />
         </picture>
         <div class="hero__block">
           <div class="hero__title">
-            <h1>
-              Организация клубов <span>и домашнего караоке</span> ПОД КЛЮЧ
-            </h1>
+            <h1>Аренда караоке под ключ</h1>
+            <p>Легкий Start up бизнес в сфере караоке-услуг</p>
             <span class="circle-1"></span>
             <span class="circle-2"></span>
             <span class="circle-3"></span>
@@ -1090,19 +1126,18 @@
     </div>
     <div class="swiper-pagination"></div>
   </div>
-  <div class="hero__offer mobile">
-    <div class="hero__offer--title">Уже через 5 минут</div>
-    <div class="hero__offer--description">Получите 3 варианта караоке</div>
-    <div class="hero__offer--ask">Попробуем ?</div>
-    <div class="hero__offer--links">
-      <a href="#" class="hero__offer--link">Подберите</a>
-      <a href="#" class="hero__offer--link">Подобрать самому</a>
+  <div
+    class="hero__offer-mobile"
+    style="background-image: url(img/offer-mobile.png)"
+  >
+    <div class="hero__offer-mobile--title">Уже через 5 минут</div>
+    <div class="hero__offer-mobile--description">
+      Получите 3 варианта караоке
     </div>
-    <div class="hero__offer--star">
-      <picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt="star" width="94" height="94" /></picture>
-    </div>
-    <div class="hero__offer--micro">
-      <picture><source srcset="img/micro.webp" type="image/webp"><img src="img/micro.png" alt="micro" width="156" height="73" /></picture>
+    <div class="hero__offer-mobile--ask">Попробуем ?</div>
+    <div class="hero__offer-mobile--links">
+      <a href="#" class="hero__offer-mobile--link">Подберите</a>
+      <a href="#" class="hero__offer-mobile--link">Подобрать самому</a>
     </div>
   </div>
 </section>
@@ -1481,8 +1516,37 @@
   <div class="why__right" style="background-image: url('./img/why.png')"></div>
 </section>
 
-      <section class="offer" style="background-image: url('./img/offer.png')">
-  <div class="offer__overlay"></div>
+      <section class="offer">
+  <picture>
+    <source
+      type="image/webp"
+      media="(max-width: 767px)"
+      srcset="img/offer-mob.webp"
+    />
+    <source
+      type="image/webp"
+      media="(min-width: 768px)"
+      srcset="img/offer.webp"
+    />
+    <source
+      type="image/png"
+      media="(max-width: 767px)"
+      srcset="img/offer-mob.png"
+    />
+    <source
+      type="image/png"
+      media="(min-width: 768px)"
+      srcset="img/offer.png"
+    />
+    <img
+      class="offer__overlay"
+      src="img/offer.png"
+      alt="hero"
+      width="1920"
+      height="700"
+    />
+  </picture>
+
   <h2>Вызвать техника для оценки помещения?</h2>
   <a href="#">Оставить заявку</a>
 </section>
@@ -1522,10 +1586,36 @@
   <a href="#" class="our-projects__link">Показать еще</a>
 </section>
 
-      <section
-  class="offer-bottom"
-  style="background-image: url('./img/offer-bottom.png')"
->
+      <section class="offer-bottom">
+  <picture>
+    <source
+      type="image/webp"
+      media="(max-width: 767px)"
+      srcset="img/offer-bottom-mob.webp"
+    />
+    <source
+      type="image/webp"
+      media="(min-width: 768px)"
+      srcset="img/offer-bottom.webp"
+    />
+    <source
+      type="image/png"
+      media="(max-width: 767px)"
+      srcset="img/offer-bottom-mob.png"
+    />
+    <source
+      type="image/png"
+      media="(min-width: 768px)"
+      srcset="img/offer-bottom.png"
+    />
+    <img
+      class="offer__overlay"
+      src="img/offer-bottom.png"
+      alt="hero"
+      width="1920"
+      height="700"
+    />
+  </picture>
   <div class="offer-bottom__watermark">evoclub</div>
   <h2>Слишком много информации?</h2>
   <p>Наберите и расскажите мне все сначала!</p>
@@ -1730,7 +1820,7 @@
   </div>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240909155820"></script>
-    <script src="js/app.min.js?_v=20240909155820"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241029173833"></script>
+    <script src="js/app.min.js?_v=20241029173833"></script>
   </body>
 </html>

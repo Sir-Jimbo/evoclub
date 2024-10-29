@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240909155820"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241029173833"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240909155820" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20241029173833" />
   <title>FAQ</title>
 </head>
 
@@ -169,8 +169,8 @@
               </ul>
             </div>
             <div class="header__submenu--item">
-              <ul class="header__submenu--images">
-                <li>
+              <div class="header__submenu--images">
+                <div class="header__submenu--images-item">
                   <a href="#">
                     <div
                       class="header__submenu--image"
@@ -180,8 +180,8 @@
                       <p>КАРАОКЕ-СИСТЕМА EVOBOX</p>
                     </div>
                   </a>
-                </li>
-                <li>
+                </div>
+                <div class="header__submenu--images-item">
                   <a href="#">
                     <div
                       class="header__submenu--image"
@@ -191,8 +191,8 @@
                       <p>КАРАОКЕ-СИСТЕМА EVOBOX</p>
                     </div>
                   </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </li>
@@ -1119,10 +1119,36 @@
   </div>
 </section>
 
-      <section
-  class="offer-bottom"
-  style="background-image: url('./img/offer-bottom.png')"
->
+      <section class="offer-bottom">
+  <picture>
+    <source
+      type="image/webp"
+      media="(max-width: 767px)"
+      srcset="img/offer-bottom-mob.webp"
+    />
+    <source
+      type="image/webp"
+      media="(min-width: 768px)"
+      srcset="img/offer-bottom.webp"
+    />
+    <source
+      type="image/png"
+      media="(max-width: 767px)"
+      srcset="img/offer-bottom-mob.png"
+    />
+    <source
+      type="image/png"
+      media="(min-width: 768px)"
+      srcset="img/offer-bottom.png"
+    />
+    <img
+      class="offer__overlay"
+      src="img/offer-bottom.png"
+      alt="hero"
+      width="1920"
+      height="700"
+    />
+  </picture>
   <div class="offer-bottom__watermark">evoclub</div>
   <h2>Слишком много информации?</h2>
   <p>Наберите и расскажите мне все сначала!</p>
@@ -1327,7 +1353,7 @@
   </div>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240909155820"></script>
-    <script src="js/app.min.js?_v=20240909155820"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241029173833"></script>
+    <script src="js/app.min.js?_v=20241029173833"></script>
   </body>
 </html>
