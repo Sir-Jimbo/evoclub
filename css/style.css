@@ -2486,7 +2486,8 @@ h3 {
   color: #292929;
 }
 
-.about__images img:not(:last-child) {
+.about__images img:not(:last-child),
+.about__images picture:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -4693,16 +4694,19 @@ h3 {
     margin: 0 auto;
   }
 
-  .about__images img:not(:last-child) {
+  .about__images img:not(:last-child),
+  .about__images picture:not(:last-child) {
     margin-bottom: 0;
     margin-right: 30px;
   }
 
-  .about__images img:first-child {
+  .about__images img:first-child,
+  .about__images picture:first-child {
     margin-bottom: 70px;
   }
 
-  .about__images img:last-child {
+  .about__images img:last-child,
+  .about__images picture:last-child {
     margin-top: 70px;
   }
 
