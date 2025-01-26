@@ -6226,6 +6226,12 @@ svg {
     margin-bottom: 0;
   }
 
+  .news__list--content .news__item--content {
+    width: 100%;
+    max-width: 70%;
+    margin-left: 30px;
+  }
+
   .news__list--content .news__item--content h4 {
     font-size: 24px;
   }
@@ -6358,6 +6364,12 @@ svg {
 
   .article__block--img img {
     margin: 0 30px 30px 0;
+  }
+
+  .article__block--content {
+    max-width: 70%;
+    width: 100%;
+    padding-left: 30px;
   }
 
   .article__block--content h3 {
