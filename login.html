@@ -14,7 +14,7 @@
     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20250128181213"
   />
   <link rel="stylesheet" href="css/style.min.css?_v=20250128181213" />
-  <title>FAQ</title>
+  <title>login</title>
 </head>
 
   <body>
@@ -970,99 +970,61 @@
 </header>
 
     <main>
-      <section class="breadcrumbs">
-  <div class="breadcrumbs__container">
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__item">
-        <a href="#">Главная</a>
-      </li>
-      <li class="breadcrumbs__item">/</li>
-      <li class="breadcrumbs__item active">
-        <span>FAQ</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
-      <section class="our-projects page">
-  <div class="our-projects__container">
-    <h1>Наши проекты</h1>
-    <ul class="our-projects__list three">
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-1.webp" type="image/webp" />
-          <img src="./img/project-1.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-2.webp" type="image/webp" />
-          <img src="./img/project-2.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-3.webp" type="image/webp" />
-          <img src="./img/project-3.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-4.webp" type="image/webp" />
-          <img src="./img/project-4.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-1.webp" type="image/webp" />
-          <img src="./img/project-1.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-2.webp" type="image/webp" />
-          <img src="./img/project-2.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-3.webp" type="image/webp" />
-          <img src="./img/project-3.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-4.webp" type="image/webp" />
-          <img src="./img/project-4.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-1.webp" type="image/webp" />
-          <img src="./img/project-1.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-    </ul>
-    <div class="pagination">
-      <ul>
-        <li class="disabled"><a href="#">&lt;</a></li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">&gt;</a></li>
-      </ul>
+      <section class="login">
+  <div class="login__container">
+    <h1 class="login__title">Вход в систему</h1>
+    <p class="login__text">
+      Если у вас есть учётная запись, авторизуйтесь, используя адрес электронной
+      почты (email).
+    </p>
+    <div class="login__form">
+      <form action="">
+        <div class="login__form--item">
+          <input
+            type="email"
+            class="login__form--input"
+            placeholder="Электронная почта*"
+            id="inputName"
+          />
+        </div>
+        <div class="login__form--item">
+          <input
+            type="password"
+            class="login__form--input"
+            id="exampleInputPassword1"
+            placeholder="Пароль*"
+          />
+        </div>
+        <button type="submit" class="login__form--button">Войти</button>
+        <a href="#" class="login__form--link">Забыли пароль?</a>
+      </form>
+      <div class="login__registration">
+        <div class="login__registration--content">
+          <p>
+            Создание учётной записи предоставляет много преимуществ: более
+            быстрое оформление заказа, возможность хранить более одного адреса,
+            отслеживать заказы и другое.
+          </p>
+          <button class="login__registration--button">
+            Зарегистрироваться
+          </button>
+        </div>
+      </div>
     </div>
-    <a href="#" class="our-projects__link">Показать еще (45)</a>
+    <div class="login__social">
+      <p class="login__social--title">Войдите как пользователь</p>
+      <div class="login__social--links">
+        <a href="#" class="login__social--link">
+          <img src="img/icon-telegram.svg" alt="" />
+        </a>
+        <a href="#" class="login__social--link">
+          <img src="img/icon-facebook.svg" alt="" />
+        </a>
+        <a href="#" class="login__social--link">
+          <img src="img/icon-google.svg" alt="" />
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1299,6 +1261,7 @@
     <span class="up__text">Вверх</span>
   </div>
 </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250128181213"></script>
     <script src="js/app.min.js?_v=20250128181213"></script>
