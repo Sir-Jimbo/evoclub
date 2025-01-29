@@ -14,7 +14,7 @@
     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20250130003053"
   />
   <link rel="stylesheet" href="css/style.min.css?_v=20250130003053" />
-  <title>FAQ</title>
+  <title>basket</title>
 </head>
 
   <body>
@@ -984,85 +984,121 @@
   </div>
 </section>
 
-      <section class="our-projects page">
-  <div class="our-projects__container">
-    <h1>Наши проекты</h1>
-    <ul class="our-projects__list three">
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-1.webp" type="image/webp" />
-          <img src="./img/project-1.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-2.webp" type="image/webp" />
-          <img src="./img/project-2.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-3.webp" type="image/webp" />
-          <img src="./img/project-3.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-4.webp" type="image/webp" />
-          <img src="./img/project-4.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-1.webp" type="image/webp" />
-          <img src="./img/project-1.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-2.webp" type="image/webp" />
-          <img src="./img/project-2.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-3.webp" type="image/webp" />
-          <img src="./img/project-3.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-4.webp" type="image/webp" />
-          <img src="./img/project-4.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-1.webp" type="image/webp" />
-          <img src="./img/project-1.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-    </ul>
-    <div class="pagination">
-      <ul>
-        <li class="disabled"><a href="#">&lt;</a></li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">&gt;</a></li>
-      </ul>
+      <section class="cabinet">
+  <div class="cabinet__container">
+    <h1>Корзина</h1>
+    <div class="cabinet__table">
+      <div class="cabinet-order__thead">
+        <div class="cabinet-order__thead--title">Изображение</div>
+        <div class="cabinet-order__thead--title name">Наименование</div>
+        <div class="cabinet-order__thead--title">Цена</div>
+        <div class="cabinet-order__thead--title">Количество</div>
+        <div class="cabinet-order__thead--title">Сумма</div>
+        <div class="cabinet-order__thead--title">Удалить</div>
+      </div>
+      <div class="cabinet-order__tbody">
+        <div class="cabinet-order__tbody--item">
+          <div class="cabinet-order__tbody--image">
+            <picture><source srcset="img/basket-img-page.webp" type="image/webp"><img src="img/basket-img-page.png" alt="" /></picture>
+          </div>
+          <div class="cabinet-order__tbody--name">
+            Караоке система EVOBOX [BLACK]
+          </div>
+          <div class="cabinet-order__tbody--price sum">45052 грн</div>
+          <div class="cabinet-order__tbody--count">
+            <button class="btn__minus">
+              <div class="minus"></div>
+            </button>
+            <input type="text" value="1" size="2" data-max-count="20" />
+            <button class="btn__plus">
+              <svg viewBox="0 0 24 24">
+                <line x1="12" y1="0" x2="12" y2="28"></line>
+                <line x1="0" y1="12" x2="28" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="cabinet-order__tbody--price sum">54 000 грн</div>
+          <div class="cabinet-order__tbody--action">
+            <button>
+              <picture><source srcset="img/basket-item-delete.webp" type="image/webp"><img src="img/basket-item-delete.png" alt="" /></picture>
+            </button>
+          </div>
+        </div>
+        <div class="cabinet-order__tbody--item">
+          <div class="cabinet-order__tbody--image">
+            <picture><source srcset="img/basket-img-page.webp" type="image/webp"><img src="img/basket-img-page.png" alt="" /></picture>
+          </div>
+          <div class="cabinet-order__tbody--name">
+            Караоке система EVOBOX [BLACK]
+          </div>
+          <div class="cabinet-order__tbody--price sum">45052 грн</div>
+          <div class="cabinet-order__tbody--count">
+            <button class="btn__minus">
+              <div class="minus"></div>
+            </button>
+            <input type="text" value="1" size="2" data-max-count="20" />
+            <button class="btn__plus">
+              <svg viewBox="0 0 24 24">
+                <line x1="12" y1="0" x2="12" y2="28"></line>
+                <line x1="0" y1="12" x2="28" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="cabinet-order__tbody--price sum">54 000 грн</div>
+          <div class="cabinet-order__tbody--action">
+            <button>
+              <picture><source srcset="img/basket-item-delete.webp" type="image/webp"><img src="img/basket-item-delete.png" alt="" /></picture>
+            </button>
+          </div>
+        </div>
+        <div class="cabinet-order__tbody--item">
+          <div class="cabinet-order__tbody--image">
+            <picture><source srcset="img/basket-img-page.webp" type="image/webp"><img src="img/basket-img-page.png" alt="" /></picture>
+          </div>
+          <div class="cabinet-order__tbody--name">
+            Караоке система EVOBOX [BLACK]
+          </div>
+          <div class="cabinet-order__tbody--price sum">45052 грн</div>
+          <div class="cabinet-order__tbody--count">
+            <button class="btn__minus">
+              <div class="minus"></div>
+            </button>
+            <input type="text" value="1" size="2" data-max-count="20" />
+            <button class="btn__plus">
+              <svg viewBox="0 0 24 24">
+                <line x1="12" y1="0" x2="12" y2="28"></line>
+                <line x1="0" y1="12" x2="28" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="cabinet-order__tbody--price sum">54 000 грн</div>
+          <div class="cabinet-order__tbody--action">
+            <button>
+              <picture><source srcset="img/basket-item-delete.webp" type="image/webp"><img src="img/basket-item-delete.png" alt="" /></picture>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <a href="#" class="our-projects__link">Показать еще (45)</a>
+    <div class="cabinet__bottom">
+      <div class="cabinet__button">
+        <a href="#">Очистить корзину</a>
+      </div>
+      <div class="cabinet__bottom--info">
+        <div class="cabinet__bottom--together">
+          Разом: <span class="number">2</span><span class="text">товари</span>
+        </div>
+
+        <div class="cabinet__bottom--amount">
+          На сумму: <span class="number">54 000</span
+          ><span class="text">грн</span>
+        </div>
+      </div>
+    </div>
+    <div class="cart-product__buttons">
+      <button class="cart-product__button btn-buy">Оформить заказ</button>
+      <button class="cart-product__button btn-sale">Рассрочка</button>
+    </div>
   </div>
 </section>
 
@@ -1299,6 +1335,7 @@
     <span class="up__text">Вверх</span>
   </div>
 </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250130003053"></script>
     <script src="js/app.min.js?_v=20250130003053"></script>

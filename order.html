@@ -14,7 +14,7 @@
     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20250130003053"
   />
   <link rel="stylesheet" href="css/style.min.css?_v=20250130003053" />
-  <title>FAQ</title>
+  <title>order</title>
 </head>
 
   <body>
@@ -984,85 +984,107 @@
   </div>
 </section>
 
-      <section class="our-projects page">
-  <div class="our-projects__container">
-    <h1>Наши проекты</h1>
-    <ul class="our-projects__list three">
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-1.webp" type="image/webp" />
-          <img src="./img/project-1.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-2.webp" type="image/webp" />
-          <img src="./img/project-2.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-3.webp" type="image/webp" />
-          <img src="./img/project-3.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-4.webp" type="image/webp" />
-          <img src="./img/project-4.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-1.webp" type="image/webp" />
-          <img src="./img/project-1.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-2.webp" type="image/webp" />
-          <img src="./img/project-2.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-3.webp" type="image/webp" />
-          <img src="./img/project-3.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Mister Cat, г. Киев</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-4.webp" type="image/webp" />
-          <img src="./img/project-4.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-      <li class="our-projects__item">
-        <picture>
-          <source srcset="./img/project-1.webp" type="image/webp" />
-          <img src="./img/project-1.png" alt="project" />
-        </picture>
-        <div class="our-projects__item--description">Check In, г. Харьков</div>
-      </li>
-    </ul>
-    <div class="pagination">
-      <ul>
-        <li class="disabled"><a href="#">&lt;</a></li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">&gt;</a></li>
-      </ul>
-    </div>
-    <a href="#" class="our-projects__link">Показать еще (45)</a>
+      <section class="order">
+  <div class="order__container">
+    <h1>Оформление заказа</h1>
+
+    <div class="order__title">Оплата и доставка</div>
+    <form class="order__form" action="">
+      <div class="order__form--wrap">
+        <div class="order__form--left">
+          <div class="order__form--item">
+            <label for="payWay">Способы оплаты</label>
+            <select id="payWay" class="order__form--input">
+              <option selected>Оплата при получени(наложенный платеж)</option>
+              <option>100% предоплата</option>
+              <option>Оплата частями</option>
+            </select>
+          </div>
+        </div>
+        <div class="order__form--right">
+          <div class="order__form--item">
+            <label for="inputRegion">Область</label>
+            <select id="inputRegion" class="order__form--input">
+              <option selected>Днепропетровская</option>
+              <option>Киевская</option>
+              <option>Львовская</option>
+            </select>
+          </div>
+          <div class="order__form--item">
+            <label for="inputCity">Город</label>
+            <select id="inputCity" class="order__form--input">
+              <option selected>Днепр</option>
+              <option>Киев</option>
+              <option>Львов</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="order__form--wrap">
+        <div class="order__form--left">
+          <div class="order__form--item">
+            <label for="deliveryMethod">Способы доставки</label>
+            <select id="deliveryMethod" class="order__form--input">
+              <option selected>Новая почта</option>
+              <option>Курьером по адресу</option>
+              <option>Доставка на пункт выдачи</option>
+            </select>
+          </div>
+        </div>
+        <div class="order__form--right">
+          <div class="order__form--item">
+            <label for="department">Отделение</label>
+            <select id="department" class="order__form--input">
+              <option selected>Новая почта склад №365</option>
+              <option>Новач почта склад №1</option>
+              <option>Новач почта склад №25</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="order__title">Персональные данные</div>
+      <div class="order__form--wrap personal">
+        <div class="order__form--left">
+          <div class="order__form--item">
+            <label for="inputName">Имя и фамилия</label>
+            <input
+              type="text"
+              class="order__form--input"
+              placeholder="Иван Иванов"
+              id="inputName"
+            />
+          </div>
+          <div class="order__form--wrap">
+            <div class="order__form--item phone">
+              <label for="inputName">Телефон</label>
+              <input
+                type="tel"
+                class="order__form--input"
+                placeholder="Иван Иванов"
+                id="inputName"
+              />
+            </div>
+            <div class="order__form--item">
+              <label for="inputName">Email</label>
+              <input
+                type="email"
+                class="order__form--input"
+                placeholder="Иван Иванов"
+                id="inputName"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="order__form--right">
+          <div class="order__form--item">
+            <label for="inputName">Сообщение</label>
+            <textarea placeholder="Иван Иванов" id="inputName"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="order__form--button">Отправить</button>
+    </form>
   </div>
 </section>
 
@@ -1299,6 +1321,7 @@
     <span class="up__text">Вверх</span>
   </div>
 </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250130003053"></script>
     <script src="js/app.min.js?_v=20250130003053"></script>
