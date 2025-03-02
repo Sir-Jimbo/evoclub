@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="files/ion.rangeSlider.min.css?_v=20250130003053" />
+  <link rel="stylesheet" href="files/ion.rangeSlider.min.css?_v=20250303003109" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250130003053"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250303003109"
   />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20250130003053"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20250303003109"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20250130003053" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20250303003109" />
   <title>Catalog</title>
 </head>
 
@@ -1156,11 +1156,10 @@
             </div>
          </div>
       </div>
-      <div class="catalog__banner">
+      <div class="catalog__banner" style="background-image: url('./img/catalog-banner.png')">
          <h3 class="catalog__banner--title">
-            <strong>Хотите получить</strong><br/>
-            скидку или подарок<br>
-            при покупке<br/>
+            <strong>Хотите получить</strong> скидку<br/>
+             или подарок при покупке<br/>
             <strong>караоке-комплекта?</strong>
          </h3>
          <div class="catalog__banner--buttons">
@@ -1199,7 +1198,17 @@
             </p> 
             <p class="title text">Срок гарантийного обслуживания составляет 12 месяцев.</p>
          </div>
-         <div class="catalog__banner banner__bottom">
+         <div class="catalog__banner banner__bottom mobile" style="background-image: url('./img/catalog-banner-small-two.png')">
+            <div class="catalog__banner--left">
+               <h3 class="catalog__banner--title"> <strong>Хотите посмотреть и</strong><br/> прослушать караоке<br/> вживую в шоу-рум?</strong></h3>
+               <p class="catalog__banner--text">Выберите удобный<br/> вам вариант</p>
+            </div>
+            <div class="catalog__banner--buttons">
+               <button class="catalog__banner--button second">Прослушать в шоу-рум</button>
+               <button class="catalog__banner--button second">Прослушать в моем помещении</button>
+            </div>
+         </div>
+         <div class="catalog__banner banner__bottom desktop" style="background-image: url('./img/banner-bottom.png')">
             <div class="catalog__banner--left">
                <h3 class="catalog__banner--title"> <strong>Хотите посмотреть и</strong><br/> прослушать караоке<br/> вживую в шоу-рум?</strong></h3>
                <p class="catalog__banner--text">Выберите удобный<br/> вам вариант</p>
@@ -1280,7 +1289,11 @@
          </div>
       </div>
       <div class="cart-product__tab--section" id="views">
-         <h2>Отзывы</h2>
+         <div class="cart-product__tab--top">
+            <h2>Отзывы</h2>
+            <button class="cart-product__button btn-views">Оставить отзыв</button>
+         </div>
+         
          <div class="swiper cart-product__views">
             <div class="swiper-wrapper">
                <div class="swiper-slide">
@@ -1318,14 +1331,14 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
          </div>
-         <div class="catalog__banner banner__bottom">
+         <div class="catalog__banner" style="background-image: url('./img/banner-bottom-2.png')">
             <div class="catalog__banner--left">
-               <h3 class="catalog__banner--title"> <strong>Хотите посмотреть и</strong><br/> прослушать караоке<br/> вживую в шоу-рум?</strong></h3>
+               <h3 class="catalog__banner--title"> <strong>Хотите получить<br/> полный каталог<br/>песен?</strong></h3>
                <p class="catalog__banner--text">Выберите удобный<br/> вам вариант</p>
             </div>
             <div class="catalog__banner--buttons">
-               <button class="catalog__banner--button second">Прослушать в шоу-рум</button>
-               <button class="catalog__banner--button second">Прослушать в моем помещении</button>
+               <button class="catalog__banner--button second">Посмотреть каталог</button>
+               <button class="catalog__banner--button second">Я знаю все песнти</button>
             </div>
          </div>
       </div>
@@ -1333,6 +1346,7 @@
 </section>
       <section class="offer-bottom">
   <picture>
+    <!--
     <source
       type="image/webp"
       media="(max-width: 767px)"
@@ -1343,6 +1357,7 @@
       media="(min-width: 768px)"
       srcset="img/offer-bottom.webp"
     />
+    -->
     <source
       type="image/png"
       media="(max-width: 767px)"
@@ -1354,21 +1369,21 @@
       srcset="img/offer-bottom.png"
     />
     <img
-      class="offer__overlay"
+      class="offer-bottom__overlay"
       src="img/offer-bottom.png"
       alt="hero"
       width="1920"
-      height="700"
+      height="479"
     />
   </picture>
   <div class="offer-bottom__watermark">evoclub</div>
   <h2>Слишком много информации?</h2>
   <p>Наберите и расскажите мне все сначала!</p>
-  <a href="#">Оставить заявку</a>
+  <a class="offer__btn" href="#">Оставить заявку</a>
 </section>
 
     </main>
-    <footer class="footer" style="background-image: url('./img/footer-bg.jpg')">
+    <footer class="footer">
   <div class="footer__left">
     <div class="footer__logo">
       <svg
@@ -1566,8 +1581,8 @@
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250130003053"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20250130003053"></script>
-    <script src="js/app.min.js?_v=20250130003053"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250303003109"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20250303003109"></script>
+    <script src="js/app.min.js?_v=20250303003109"></script>
   </body>
 </html>

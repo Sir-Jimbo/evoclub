@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="files/ion.rangeSlider.min.css?_v=20250130003053" />
+  <link rel="stylesheet" href="files/ion.rangeSlider.min.css?_v=20250303003109" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250130003053"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250303003109"
   />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20250130003053"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20250303003109"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20250130003053" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20250303003109" />
   <title>Головна</title>
 </head>
 
@@ -976,6 +976,7 @@
       <!-- Slides -->
       <div class="swiper-slide">
         <picture>
+          <!--
           <source
             type="image/webp"
             media="(max-width: 767px)"
@@ -986,8 +987,9 @@
             media="(min-width: 768px)"
             srcset="img/hero-1.webp"
           />
+          -->
           <source
-            type="image/jpeg"
+            type="image/png"
             media="(max-width: 767px)"
             srcset="img/hero-mob.png"
           />
@@ -996,7 +998,7 @@
             media="(min-width: 768px)"
             srcset="img/hero-1.png"
           />
-          <img src="img/hero-1.png" alt="hero" width="1920" height="700" />
+          <img src="img/hero-1.png" alt="hero" width="1920" height="695" />
         </picture>
         <div class="hero__block">
           <div class="hero__title">
@@ -1028,6 +1030,7 @@
       </div>
       <div class="swiper-slide">
         <picture>
+          <!--
           <source
             type="image/webp"
             media="(max-width: 767px)"
@@ -1038,6 +1041,7 @@
             media="(min-width: 768px)"
             srcset="img/hero-2.webp"
           />
+          -->
           <source
             type="image/png"
             media="(max-width: 767px)"
@@ -1048,7 +1052,7 @@
             media="(min-width: 768px)"
             srcset="img/hero-2.png"
           />
-          <img src="img/hero-2.png" alt="hero" width="1920" height="700" />
+          <img src="img/hero-2.png" alt="hero" width="1920" height="695" />
         </picture>
         <div class="hero__block">
           <div class="hero__title">
@@ -1079,6 +1083,7 @@
       </div>
       <div class="swiper-slide">
         <picture>
+          <!--
           <source
             type="image/webp"
             media="(max-width: 767px)"
@@ -1089,6 +1094,7 @@
             media="(min-width: 768px)"
             srcset="img/hero-3.webp"
           />
+          -->
           <source
             type="image/png"
             media="(max-width: 767px)"
@@ -1099,7 +1105,7 @@
             media="(min-width: 768px)"
             srcset="img/hero-3.png"
           />
-          <img src="img/hero-3.png" alt="hero" width="1920" height="700" />
+          <img src="img/hero-3.png" alt="hero" width="1920" height="695" />
         </picture>
         <div class="hero__block">
           <div class="hero__title">
@@ -1132,7 +1138,23 @@
     <div class="swiper-pagination"></div>
   </div>
   <div
-    class="hero__offer-mobile"
+    class="hero__offer-mobile ipad"
+    style="background-image: url(img/hero-mob-first.png)"
+  >
+    <div class="hero__offer-mobile--left">
+      <div class="hero__offer-mobile--title">Уже через 5 минут</div>
+      <div class="hero__offer-mobile--description">
+        Получите 3 варианта караоке
+      </div>
+      <div class="hero__offer-mobile--ask">Попробуем ?</div>
+    </div>
+    <div class="hero__offer-mobile--links">
+      <a href="#" class="hero__offer-mobile--link">Подберите</a>
+      <a href="#" class="hero__offer-mobile--link">Подобрать самому</a>
+    </div>
+  </div>
+  <div
+    class="hero__offer-mobile phone"
     style="background-image: url(img/offer-mobile.png)"
   >
     <div class="hero__offer-mobile--title">Уже через 5 минут</div>
@@ -1140,6 +1162,7 @@
       Получите 3 варианта караоке
     </div>
     <div class="hero__offer-mobile--ask">Попробуем ?</div>
+
     <div class="hero__offer-mobile--links">
       <a href="#" class="hero__offer-mobile--link">Подберите</a>
       <a href="#" class="hero__offer-mobile--link">Подобрать самому</a>
@@ -1523,6 +1546,7 @@
 
       <section class="offer">
   <picture>
+    <!--
     <source
       type="image/webp"
       media="(max-width: 767px)"
@@ -1533,9 +1557,15 @@
       media="(min-width: 768px)"
       srcset="img/offer.webp"
     />
+    -->
     <source
       type="image/png"
-      media="(max-width: 767px)"
+      media="(max-width: 400px)"
+      srcset="img/offer-mob-first.png"
+    />
+    <source
+      type="image/png"
+      media="( min-width: 401px) and ( max-width: 767px)"
       srcset="img/offer-mob.png"
     />
     <source
@@ -1548,12 +1578,14 @@
       src="img/offer.png"
       alt="hero"
       width="1920"
-      height="700"
+      height="320"
     />
   </picture>
-
-  <h2>Вызвать техника для оценки помещения?</h2>
-  <a href="#">Оставить заявку</a>
+  <p class="offer__watermark">evoclub</p>
+  <div class="offer__content">
+    <h2>Вызвать техника для оценки помещения?</h2>
+    <a href="#">Оставить заявку</a>
+  </div>
 </section>
 
       <section class="our-projects">
@@ -1593,6 +1625,7 @@
 
       <section class="offer-bottom">
   <picture>
+    <!--
     <source
       type="image/webp"
       media="(max-width: 767px)"
@@ -1603,6 +1636,7 @@
       media="(min-width: 768px)"
       srcset="img/offer-bottom.webp"
     />
+    -->
     <source
       type="image/png"
       media="(max-width: 767px)"
@@ -1614,21 +1648,21 @@
       srcset="img/offer-bottom.png"
     />
     <img
-      class="offer__overlay"
+      class="offer-bottom__overlay"
       src="img/offer-bottom.png"
       alt="hero"
       width="1920"
-      height="700"
+      height="479"
     />
   </picture>
   <div class="offer-bottom__watermark">evoclub</div>
   <h2>Слишком много информации?</h2>
   <p>Наберите и расскажите мне все сначала!</p>
-  <a href="#">Оставить заявку</a>
+  <a class="offer__btn" href="#">Оставить заявку</a>
 </section>
 
     </main>
-    <footer class="footer" style="background-image: url('./img/footer-bg.jpg')">
+    <footer class="footer">
   <div class="footer__left">
     <div class="footer__logo">
       <svg
@@ -1807,7 +1841,160 @@
     </div>
   </div>
 </footer>
- <a
+
+    <div class="modal">
+  <div class="modal__content">
+    <img class="modal__content--close" src="img/modal-close.svg" alt="" />
+    <form action="" class="modal__form">
+      <h2 class="modal__form--title">Онлайн-заявка</h2>
+      <div class="modal__form--block">
+        <input class="modal__form--item" type="text" placeholder="Имя" />
+        <input class="modal__form--item" type="text" placeholder="Почта" />
+        <input
+          class="modal__form--item"
+          type="text"
+          placeholder="Номер телефона"
+        />
+        <button class="modal__form--item" type="submit">Отправить</button>
+      </div>
+    </form>
+    <div class="modal__form--error"></div>
+  </div>
+</div>
+
+    <div class="basket-modal">
+  <div class="basket-modal__block">
+    <div class="basket-modal__header">
+      <h2 class="basket-modal__title">Корзина</h2>
+      <button class="basket-modal__close">
+        <span></span>
+      </button>
+    </div>
+    <div class="basket-modal__description">
+      <div class="basket-modal__content">
+        <div class="basket-modal__content--item">
+          <div class="basket-modal__content--item-header">
+            <div class="basket-modal__content--item-left">
+              <picture><source srcset="img/basket-img.webp" type="image/webp"><img src="img/basket-img.png" alt="" /></picture>
+            </div>
+            <div class="basket-modal__content--item-middle">
+              <p class="basket-modal__content--item-title">
+                Караоке-система <br />EVOBOX [BLACK]
+              </p>
+              <p class="basket-modal__content--item-articul">Артикул: 26355</p>
+            </div>
+            <div class="basket-modal__content--item-right">
+              <img
+                src="img/basket-item-delete.png"
+                alt=""
+                class="basket-modal__content-item-img"
+              />
+            </div>
+          </div>
+          <div class="basket-modal__price">
+            <div class="basket-modal__price--current">
+              Цена: <span>27 000 грн</span>
+            </div>
+            <div class="basket-modal__count">
+              <div class="basket-modal__quantity">
+                <button class="btn__minus">
+                  <div class="minus"></div>
+                </button>
+                <input type="text" value="1" size="2" data-max-count="20" />
+                <button class="btn__plus">
+                  <svg viewBox="0 0 24 24">
+                    <line x1="12" y1="0" x2="12" y2="28"></line>
+                    <line x1="0" y1="12" x2="28" y2="12"></line>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="basket-modal__price--finish">
+                <p class="basket-modal__price--finish-text">Итого:</p>
+
+                <p class="basket-modal__price--finish-number">54 000 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="basket-modal__content--item">
+          <div class="basket-modal__content--item-header">
+            <div class="basket-modal__content--item-left">
+              <picture><source srcset="img/basket-img.webp" type="image/webp"><img src="img/basket-img.png" alt="" /></picture>
+            </div>
+            <div class="basket-modal__content--item-middle">
+              <p class="basket-modal__content--item-title">
+                Караоке-система <br />EVOBOX [BLACK]
+              </p>
+              <p class="basket-modal__content--item-articul">Артикул: 26355</p>
+            </div>
+            <div class="basket-modal__content--item-right">
+              <img
+                src="img/basket-item-delete.png"
+                alt=""
+                class="basket-modal__content-item-img"
+              />
+            </div>
+          </div>
+          <div class="basket-modal__price">
+            <div class="basket-modal__price--current">
+              Цена: <span>27 000 грн</span>
+            </div>
+            <div class="basket-modal__count">
+              <div class="basket-modal__quantity">
+                <button class="btn__minus">
+                  <div class="minus"></div>
+                </button>
+                <input type="text" value="1" size="2" data-max-count="20" />
+                <button class="btn__plus">
+                  <svg viewBox="0 0 24 24">
+                    <line x1="12" y1="0" x2="12" y2="28"></line>
+                    <line x1="0" y1="12" x2="28" y2="12"></line>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="basket-modal__price--finish">
+                <p class="basket-modal__price--finish-text">Итого:</p>
+
+                <p class="basket-modal__price--finish-number">54 000 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="basket-modal__send">
+        <p class="basket-modal__send--text">Купить в один клик</p>
+
+        <form class="basket-modal__send--form">
+          <input
+            type="tel"
+            class="basket-modal__phone"
+            id="basket-modal__phone"
+            data-inputmask="'mask': '+38 ()99-99999'"
+          />
+          <button class="basket-modal__button--send">Отправить</button>
+        </form>
+
+        <div class="basket-modal__order">
+          <div class="basket-modal__final-price">
+            <p class="basket-modal__final-price--text">Всего</p>
+            <p class="basket-modal__final-price--number">54 000 грн</p>
+          </div>
+          <div class="cart-product__buttons">
+            <button class="cart-product__button next">
+              Продолжить покупки
+            </button>
+            <button class="cart-product__button btn-buy">Оформить заказ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <a
   class="bc-popup-btn"
   href="#form_back_call"
   data-title="Заказать обратный звонок"
@@ -1819,13 +2006,14 @@
     src="img/bc-ico.png"
   />
 </a>
- <div class="up">
+
+    <div class="up">
   <div class="up__block">
     <span class="up__text">Вверх</span>
   </div>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250130003053"></script>
-    <script src="js/app.min.js?_v=20250130003053"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250303003109"></script>
+    <script src="js/app.min.js?_v=20250303003109"></script>
   </body>
 </html>
