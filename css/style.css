@@ -1445,6 +1445,7 @@ svg {
 .hero__offer--star img {
   min-height: unset !important;
   margin: 0;
+  height: auto !important;
 }
 
 .hero__offer--micro {
@@ -1459,6 +1460,7 @@ svg {
   min-height: unset !important;
   margin: 0;
   width: 90px;
+  height: auto !important;
 }
 
 .popular-categories {
