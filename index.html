@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="files/ion.rangeSlider.min.css?_v=20250303004648" />
+  <link rel="stylesheet" href="files/ion.rangeSlider.min.css?_v=20250717161914" />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250303004648"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250717161914"
   />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20250303004648"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20250717161914"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20250303004648" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20250717161914" />
   <title>Головна</title>
 </head>
 
@@ -722,7 +722,7 @@
       <div class="header__right">
         <div class="header__phones">
           <div class="header__phones--icon">
-            <svg width="15" height="15">
+            <svg width="20" height="20">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
             <span>></span>
@@ -1137,6 +1137,7 @@
     </div>
     <div class="swiper-pagination"></div>
   </div>
+  <!--
   <div
     class="hero__offer-mobile ipad"
     style="background-image: url(img/hero-mob-first.png)"
@@ -1166,6 +1167,49 @@
     <div class="hero__offer-mobile--links">
       <a href="#" class="hero__offer-mobile--link">Подберите</a>
       <a href="#" class="hero__offer-mobile--link">Подобрать самому</a>
+    </div>
+  </div>
+  -->
+  <div class="hero__offer-mobile offer">
+    <picture>
+      <source
+        type="image/png"
+        media="(max-width: 640px)"
+        srcset="img/hero-offer.jpg"
+      />
+      <source
+        type="image/png"
+        media="( min-width: 641px) and ( max-width: 767px)"
+        srcset="img/hero-offer.jpg"
+      />
+      <source
+        type="image/png"
+        media="(min-width: 768px)"
+        srcset="img/hero-offer.jpg"
+      />
+      <img
+        class="offer__overlay"
+        src="img/hero-offer.jpg"
+        alt="hero"
+        width="1920"
+        height="320"
+      />
+    </picture>
+    <p class="offer__watermark">evoclub</p>
+    <div class="hero__offer-mobile--content">
+      <div class="hero__offer-mobile--left">
+        <div class="hero__offer-mobile--title">Уже через 5 минут</div>
+        <div class="hero__offer-mobile--description">
+          Получите 3 варианта караоке
+        </div>
+        <div class="hero__offer-mobile--ask">Попробуем ?</div>
+      </div>
+      <div class="hero__offer-mobile--right">
+        <div class="hero__offer-mobile--links">
+          <button class="hero__offer-mobile--link">Подберите</button>
+          <button class="hero__offer-mobile--link">Подобрать самому</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1560,12 +1604,12 @@
     -->
     <source
       type="image/png"
-      media="(max-width: 400px)"
+      media="(max-width: 640px)"
       srcset="img/offer-mob-first.png"
     />
     <source
       type="image/png"
-      media="( min-width: 401px) and ( max-width: 767px)"
+      media="( min-width: 641px) and ( max-width: 767px)"
       srcset="img/offer-mob.png"
     />
     <source
@@ -1640,7 +1684,7 @@
     <source
       type="image/png"
       media="(max-width: 767px)"
-      srcset="img/offer-bottom-mob.png"
+      srcset="img/offer-bottom-new.jpg"
     />
     <source
       type="image/png"
@@ -2013,7 +2057,7 @@
   </div>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250303004648"></script>
-    <script src="js/app.min.js?_v=20250303004648"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250717161914"></script>
+    <script src="js/app.min.js?_v=20250717161914"></script>
   </body>
 </html>
