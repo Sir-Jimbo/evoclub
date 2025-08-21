@@ -2376,9 +2376,6 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0 30px;
   min-height: 263px;
   height: 100%;
@@ -5535,6 +5532,7 @@ svg {
   margin-bottom: 20px;
   background: rgba(0, 0, 0, 0.5);
   padding: 5px;
+  max-width: 67%;
 }
 
 .collection .catalog__banner.banner__bottom .catalog__banner--text {
@@ -8930,18 +8928,6 @@ svg {
     max-height: 0;
     -webkit-transition: max-height 0.3s ease-in-out;
     transition: max-height 0.3s ease-in-out;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .collection .catalog__banner.banner__bottom .catalog__banner--button {
-    height: 45px;
-    padding: 15px 30px;
-    border-radius: 90px;
-    line-height: 124.7%;
-    font-family: Gilroy, sans-serif;
-    background-color: #edc867;
-    border: 1px solid #edc867;
   }
 }
 
