@@ -8931,6 +8931,20 @@ svg {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .collection .catalog__banner.banner__bottom .catalog__banner--button.second {
+    background-color: #EDC867;
+    border-color: #EDC867;
+  }
+
+  .collection .catalog__banner.banner__bottom .catalog__banner--button.second:hover {
+    background-color: #fff;
+    color: #292929;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
 .webp .header__mobile.dark{ background-image: url(../img/menu.webp); }
 
 .webp .header__phones--list.dark{ background-image: url(../img/menu.webp); }
